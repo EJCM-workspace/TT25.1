@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./banco_de_dados.db"
+
+}
+
+
+model User{
+    email String @id
+    name String
+    isPremium Boolean @default(false)
+    phone String
+    reserves Reserve[]
+}
+
+model Reserve{
+    id Int @id @default(autoincrement())
+    address String
+    date DateTime @default(now())
+    userEmail String
+    user User @relation(fields: [userEmail],references: [email]) 
+}
