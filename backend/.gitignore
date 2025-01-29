@@ -1,1 +1,5 @@
 node_modules
+.env
+
+
+# Se o .env ainda não foi ignorado, rode o comando git rm .env --cached no terminal

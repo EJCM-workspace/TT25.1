@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { Prisma, PrismaClient } from "@prisma/client";
 import { validationResult } from "express-validator";
+import { Mailer } from "../config/mailer";
 
 const prisma: PrismaClient = new PrismaClient();
 
@@ -30,6 +31,8 @@ class ReserveController {
           user: true,
         },
       });
+
+      Mailer.sendEmail("socratesfreitas1@gmail.com","Nodemailer","Deu Bom, Chefe!")
 
       response.status(201).json(createdReserve);
     } catch (error: any) {
