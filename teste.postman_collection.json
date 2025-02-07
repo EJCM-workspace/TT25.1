@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "d2e2af66-9eb6-404d-9728-5b13dfc15490",
+		"name": "teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26828798"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3333/book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjMzY2Yzg4Zi0xMDdlLTQ3NWUtODI1Zi1lOGU1NWJkMWU3ZGIiLCJpYXQiOjE3Mzg2NzE0NTQsImV4cCI6MTczOTI3NjI1NH0.KYWaXtGsIouIOxCzikx-7UiPADg-WtVSgdkDg2fBsa_ZS1iKnq9lxtFylOpsZfEliif-j4XYhdsHI7tpKxXRrGZp-L4fYhITqFQWnJY6ucjcKTTUffPjP96A-uCVyMM-TBZRBDCGvn3ePd9b2MQBlZS7xUHlGFZrAAbNL9OaoQ5q_cr6CHThhVG-jVGKDbK3PquKXaP9F1moSthMr6bYay0CwbF44__94p1YyodtVw1VteYRX-QsYioUrKNKwnEjQJwO6dWSA4T8dB-fyITQx13Qgq8mxu6tIxUkNWU23Z6NsItyH1octLmmZBVHbmvP_BOXv09WlcVOPopWNhvtznPvo8EyNbStW3EpS7gf6pylhB6Xtk8GoFhTHEANjfG72Mq20-C4jX1uizGq2I4jojS2AMHAgUtGWRRq4U0uRvlKoVDF-5J4GyckBGT-ViviyUeiXJEzB6XdaITL0IGlhkY53A1kXrUEuT7qtEHwnspvLhdUOyk0Ar5zj8l35NAa-Hbs9IDwib1S0ElDBNaS5N-ZHSaGZlQq7WSuQCAF8ZMgHYtj0hLOrc8ccvbSCSYOwORrKjLMQouq6TKT82A_DTQAqPH-guh7DZTcqnhlX5XOiBh50LJ674--2TnXL9PTHXY5l48vSbEjSCRGtOGMbotazEIzLWT8xhGOC7sgYSE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Fundação\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/book"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gabriel\",\r\n    \"email\": \"gabriel@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/register"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3333/books"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3333/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gabriel@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/login"
+			},
+			"response": []
+		}
+	]
+}
